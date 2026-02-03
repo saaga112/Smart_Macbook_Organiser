@@ -1,0 +1,84 @@
+target_dirs:
+- /Users/satyamagarwal/Downloads
+dest_name: Organized_AI
+budget_limit: 0.8
+embedding_model: text-embedding-3-small
+chat_model: gpt-4.1-mini
+embedding_threshold: 0.88
+max_text_chars: 2000
+dry_run: false
+cache_dir: project/.cache/organized_ai
+taxonomy:
+- Documents
+- Financial
+- Bills
+- Invoices
+- Receipts
+- Medical
+- Legal
+- Work
+- Career
+- Projects
+- Education
+- Personal
+- Travel
+- Photos
+- Screenshots
+- Music
+- Videos
+- Archives
+- Unsorted
+max_file_bytes: 10000000
+allowed_extensions: []
+skip_dirs:
+- .git
+- .venv
+- .terraform
+- node_modules
+- .app
+- __pycache__
+- .cache
+skip_hidden: true
+skip_extensions:
+- dng
+- zip
+- 7z
+- rar
+- tar
+- gz
+- tgz
+- bz2
+- xz
+- jar
+- iso
+- dmg
+- pkg
+- exe
+- mov
+- mp4
+- mkv
+- avi
+use_exif: false
+use_pdf_meta: false
+use_ocr: false
+cluster_method: centroid
+cluster_max_size: 50
+labeler_temperature: 0.2
+local_name_rules:
+  screenshot: Screenshots
+  invoice: Documents/Invoices
+  bill: Documents/Bills
+  tax: Documents/Tax
+  insurance: Documents/Insurance
+  medical: Documents/Medical
+  report: Documents/Reports
+  bank: Documents/Bank
+  resume: Career/Resume
+  cv: Career/Resume
+  offer: Career/Offers
+  agreement: Legal/Agreements
+local_path_rules:
+  whatsapp: Photos/WhatsApp
+  telegram: Photos/Telegram
+  iphone: Photos/iPhone
+include_subfolders: false
